@@ -1,0 +1,9 @@
+.cards-wrapper-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    z-index: 1 !important;
+
+}
+

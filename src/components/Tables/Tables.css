@@ -1,0 +1,117 @@
+.table-title {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.table-all-btn {
+    color: var(--white);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.custom-table td {
+    border-color: none !important;
+    border: none !important;
+    padding: 20px !important;
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
+.custom-table .btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: var(--white);
+}
+
+.custom-table .btns {
+    background-color: var(--icon-bg);
+    border: none;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--white);
+}
+
+.custom-table .btns:hover {
+    background-color: var(--bg-color);
+    border: none;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--white);
+}
+
+.table {
+    --bs-table-bg: var(--card-bg) !important;
+    width: 100%;
+}
+
+.custom-thead:first-child {
+    border-radius: 12px 0px 0px 0px;
+}
+
+.custom-thead:last-child {
+    border-radius: 0px 12px 0px 0px;
+}
+
+.custom-thead {
+    background-color: var(--icon-bg) !important;
+}
+
+
+.custom-table th {
+    padding: 20px !important;
+    color: var(--white) !important;
+}
+
+.table-success-text {
+    color: var(--success) !important;
+}
+
+.table-danger-text {
+    color: var(--danger) !important;
+}
+
+.table-warning-text {
+    color: var(--warning) !important;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 12px !important;
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 12px !important;
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 12px !important;
+    background: #555;
+}
+
+.table-height {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 35vh;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .table-height {
+      max-height: 142vh !important;
+    }
+  }
+  

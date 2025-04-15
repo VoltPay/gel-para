@@ -1,0 +1,83 @@
+.header-content {
+    margin-top: 20px;
+    border-radius: 100px;
+    background-color: var(--card-bg);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+}
+
+.header-link {
+    padding: 16px 26px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: var(--white);
+    transition: background 0.3s;
+    background-color: transparent;
+}
+
+.header-link.active {
+    background: var(--linear);
+    font-weight: 600;
+    color: var(--black);
+}
+
+.header-link.active:hover {
+    background: var(--linear-hover);
+}
+
+.dropdown-wrapper {
+    position: relative;
+}
+
+.dropdown-toggle {
+    padding: 16px 26px;
+    border-radius: 100px;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    margin-top: 4px;
+    background-color: var(--card-bg) !important;
+    color: var(--white) !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    padding: 8px 0;
+    z-index: 1000 !important;
+    border: none !important;
+}
+
+.dropdown-menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--white);
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background: var(--primary);
+    color: var(--black);
+    transition: 0.3s;
+}
+
+.dropdown-wrapper:hover .dropdown-menu {
+    display: flex;
+}
+
+.icon-bg {
+    background-color: var(--icon-bg);
+    color: var(--white);
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

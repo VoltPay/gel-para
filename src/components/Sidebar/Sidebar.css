@@ -1,0 +1,73 @@
+.sidebar-username-title {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.sidebar-copy-text {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.bakie-title {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.bakie-price {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.all-islem {
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.last-title {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.last-username {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.last-price-success {
+    color: var(--success);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.last-price-danger {
+    color: var(--danger);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.last-date {
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.help-title {
+    color: var(--white);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.help-text {
+    color: var(--white);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+}
