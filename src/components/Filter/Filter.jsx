@@ -4,6 +4,7 @@ import Tables from "../Tables/Tables";
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { IoFilterCircleOutline } from 'react-icons/io5';
+import { Col, Row } from 'react-bootstrap';
 function Filter() {
     const [show, setShow] = useState(false);
 
@@ -20,21 +21,39 @@ function Filter() {
                     </div>
                     {/* date filter */}
                     {/* filter button */}
-                    <Button variant="transparent" onClick={handleShow} className="border-0 me-2 text-white text-nowrap">
-                        Filtrele<IoFilterCircleOutline className='ms-2' size={22} />
-                    </Button>
-                    <Offcanvas show={show} onHide={handleClose} placement='end' className="card-bg text-white" >
-                        <Offcanvas.Header closeButton>
-                            <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-                        </Offcanvas.Header>
-                        <Offcanvas.Body>
-                            Some text as placeholder. In real life you can have the elements you
-                            have chosen. Like, text, images, lists, etc.
-                        </Offcanvas.Body>
-                    </Offcanvas>
+                    <div>
+                        <Button variant="transparent" onClick={handleShow} className="border-0 me-2 text-white text-nowrap">
+                            Filtrele<IoFilterCircleOutline className='ms-2' size={22} />
+                        </Button>
+                    </div>
+
                     {/*filter button  */}
                 </div>
             </div>
+            <Offcanvas show={show} onHide={handleClose} placement='end' className="off-canvas-custom" >
+                <Offcanvas.Header closeButton>
+                    <Offcanvas.Title>Filtrele<IoFilterCircleOutline className='ms-2' size={22} /></Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                    <Row>
+                        <Col lg="12" className="mb-3">
+                            <input type="text" className='form-control custom-form-control p-3' placeholder='Filtre İsimleri' />
+                        </Col>
+                        <Col lg="12" className="mb-3">
+                            <input type="text" className='form-control custom-form-control p-3' placeholder='Filtre İsimleri' />
+                        </Col>
+                        <Col lg="12" className="mb-3">
+                            <input type="text" className='form-control custom-form-control p-3' placeholder='Filtre İsimleri' />
+                        </Col>
+                        <Col lg="12" className="mb-3">
+                            <input type="text" className='form-control custom-form-control p-3' placeholder='Filtre İsimleri' />
+                        </Col>
+                        <Col lg="12" className="mb-3">
+                            <input type="text" className='form-control custom-form-control p-3' placeholder='Filtre İsimleri' />
+                        </Col>
+                    </Row>
+                </Offcanvas.Body>
+            </Offcanvas>
         </div>
     )
 }

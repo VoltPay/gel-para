@@ -6,21 +6,21 @@ import { CiCircleCheck } from 'react-icons/ci'
 
 function RequestMoney() {
   return (
-    <div className='pe-lg-5'>
-      <div className='card-bg '>
+    <div className='pe-lg-5 h-100'>
+      <div className='card-bg ' style={{ height: '14%' }}>
         <StepByStep />
       </div>
-      <div>
-        <div className="pe-lg-0">
-          <div className="card-bg">
-            <Form id="userAccountSetupForm" name="userAccountSetupForm" enctype="multipart/form-data" method="POST">
-              <section id="step-1" className="form-step p-4">
+      <div className='h-100'>
+        <div className="pe-lg-0" style={{ height: '83%' }}>
+          <div className="card-bg h-100">
+            <Form id="userAccountSetupForm" name="userAccountSetupForm" enctype="multipart/form-data" method="POST" className='h-100'>
+              <section id="step-1" className="form-step p-4 h-100">
                 <div className="d-flex flex-column gap-3">
                   <p className='m-0'>Talep Detayları</p>
                   <div className="linear-line"></div>
                 </div>
-                <Row className='mt-4'>
-                  <Col lg="3">
+                <Row className='mt-4 position-relative'>
+                  <Col lg="6" className='mb-lg-4 mb-1'>
                     <Form.Floating className="mb-3">
                       <Form.Control
                         id="sender-name"
@@ -30,7 +30,7 @@ function RequestMoney() {
                       <label htmlFor="sender-name" className='custom-form-label'>Gönderici İsim Soyisim</label>
                     </Form.Floating>
                   </Col>
-                  <Col lg="3">
+                  <Col lg="6" className='mb-lg-4 mb-1'>
                     <Form.Floating className="mb-3">
                       <Form.Control
                         id="sender-email"
@@ -40,7 +40,7 @@ function RequestMoney() {
                       <label htmlFor="sender-email" className='custom-form-label'>Gönderici E-Posta</label>
                     </Form.Floating>
                   </Col>
-                  <Col lg="3">
+                  <Col lg="6" className='mb-lg-4 mb-1'>
                     <Form.Floating className="mb-3">
                       <Form.Control
                         id="sender-customer-number"
@@ -50,7 +50,7 @@ function RequestMoney() {
                       <label htmlFor="sender-customer-number" className='custom-form-label'>Müşteri Numarası</label>
                     </Form.Floating>
                   </Col>
-                  <Col lg="3">
+                  <Col lg="6" className='mb-lg-4 mb-1'>
                     <Form.Floating className="mb-3">
                       <Form.Control
                         id="amount-requested"
@@ -61,39 +61,44 @@ function RequestMoney() {
                     </Form.Floating>
                   </Col>
                 </Row>
-                <div className="mt-3 d-flex align-items-center justify-content-end">
-                  <button className="border-0 btn btn-primary-custom  btn-navigate-form-step" type="button" step_number="2">
+                <div className="d-flex justify-content-end mt-auto pt-4">
+                  <button
+                    className="btn btn-primary-custom border-0 btn-navigate-form-step"
+                    type="button"
+                    step_number="2"
+                  >
                     İlerle
                   </button>
                 </div>
               </section>
-              <section id="step-2" className="form-step d-none p-4">
+              <section id="step-2" className="form-step d-none p-4 h-100">
                 <div className="d-flex flex-column gap-3">
                   <p className='m-0'>Para Talep Et</p>
                   <div className="linear-line"></div>
                 </div>
-                <div className='d-flex flex-column align-items-center gap-3 mt-3'>
-                  <p className='m-0'>Para Talep Ettiğiniz Kişi</p>
-                  <small>melisa.eldem@voltrun.com.tr</small>
-                </div>
-                <Row className='mt-4'>
-                  <Col lg="6">
-                    <p className='m-0 mb-2'>Açıklama</p>
+
+                <Row className='mt-4 d-flex align-items-center'>
+                  <Col lg="12" className='my-2'>
+                    <p className='m-0 my-2'>Tarih</p>
+                    <input type="date" className='form-control custom-form-control py-3 text-white' />
+                  </Col>
+                  <Col lg="12" className='my-2'>
+                    <p className='m-0 my-2'>Açıklama</p>
                     <FloatingLabel
                       controlId="floatingTextarea"
                       label="Comments"
-                      className="mb-3 w-100 bg-transparent"
+                      className="my-3 w-100 bg-transparent"
                     >
                       <Form.Control as="textarea" placeholder="Leave a comment here" className='custom-form-control text-white' />
                     </FloatingLabel>
                   </Col>
-                  <Col lg="6">
-                    <p className='m-0 mb-2'>Tarih</p>
-                    <input type="date" className='form-control custom-form-control py-3 text-white' />
-                  </Col>
 
                 </Row>
-                <div className="mt-3 d-flex justify-content-end gap-2">
+                <div className='d-flex flex-column align-items-center gap-3 mt-3'>
+                  <p className='m-0 step-title'>Para Talep Ettiğiniz Kişi</p>
+                  <small>melisa.eldem@voltrun.com.tr</small>
+                </div>
+                <div className="d-flex justify-content-end mt-auto pt-4 gap-3">
                   <button className="border-0 btn btn-primary-custom btn-navigate-form-step" type="button" step_number="1">
                     Geri
                   </button>
@@ -102,7 +107,7 @@ function RequestMoney() {
                   </button>
                 </div>
               </section>
-              <section id="step-3" className="form-step d-none p-4">
+              <section id="step-3" className="form-step d-none p-4 h-100">
                 <div className="d-flex flex-column gap-3">
                   <p className='m-0'>Para Talebiniz</p>
                   <div className="linear-line"></div>
@@ -119,7 +124,7 @@ function RequestMoney() {
                   </div>
 
                 </div>
-                <div className="mt-4 d-flex align-items-center gap-3 justify-content-end">
+                <div className="d-flex justify-content-end mt-auto pt-4 gap-3">
                   <button className="border-0 btn btn-primary-custom btn-navigate-form-step" type="button" step_number="2">
                     Yazdır
                   </button>

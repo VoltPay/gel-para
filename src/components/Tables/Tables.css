@@ -1,7 +1,7 @@
 .table-title {
     color: var(--white);
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .table-all-btn {
@@ -106,12 +106,18 @@
 .table-height {
     overflow-x: auto;
     overflow-y: auto;
-    max-height: 35vh;
-  }
-  
-  @media screen and (max-width: 1200px) {
+    max-height: 600px;
+    height: 100%;
+}
+
+
+.table>thead {
+    position: sticky;
+    top: 0px;
+}
+
+@media screen and (max-width: 1200px) {
     .table-height {
-      max-height: 142vh !important;
+        max-height: 142vh !important;
     }
-  }
-  
+}

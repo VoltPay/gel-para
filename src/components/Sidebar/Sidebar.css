@@ -12,14 +12,14 @@
 
 .bakie-title {
     color: var(--white);
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .bakie-price {
     color: var(--white);
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .all-islem {
@@ -31,7 +31,7 @@
 .last-title {
     color: var(--white);
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .last-username {
@@ -43,13 +43,13 @@
 .last-price-success {
     color: var(--success);
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .last-price-danger {
     color: var(--danger);
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .last-date {
@@ -61,13 +61,13 @@
 .help-title {
     color: var(--white);
     text-align: center;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .help-text {
     color: var(--white);
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
 }

@@ -7,11 +7,11 @@ import { Col, Row } from 'react-bootstrap'
 
 function MainLayout() {
     return (
-        <div>
+        <div className='h-100'>
             <div className='px-lg-5 px-2'>
                 <Header />
             </div>
-            <Row className='m-0'>
+            <Row className='m-0 h-100'>
                 <Col lg="3" className='mt-4 ps-lg-5 px-3'><Sidebar /></Col>
                 <Col lg="9" className='mt-4 px-lg-0 px-3'>
                     <Outlet />

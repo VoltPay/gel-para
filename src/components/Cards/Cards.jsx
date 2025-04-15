@@ -15,8 +15,8 @@ function Cards() {
     ];
 
     return (
-        <div className='p-3 pt-4 z-1'>
-          <div className='d-flex align-items-center justify-content-between'>
+        <div className='p-3 pt-4 '>
+          <div className='d-flex align-items-center justify-content-between' >
               <p className='m-0 table-title'>Hızlı İşlemler</p>
               <Link to={""} className='table-all-btn'>Tümünü Gör</Link>
             </div>
@@ -26,7 +26,8 @@ function Cards() {
                     slidesPerView={3}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
-                    className='mt-2'
+                    className='mt-2 '
+                    style={{zIndex:"2"}}
                 >
                     {cardImage.map((card) => (
                         <SwiperSlide key={card.id}>

@@ -6,8 +6,8 @@ import Tables from '../components/Tables/Tables'
 
 function Home() {
   return (
-    <div>
-      <Row className='m-0 '>
+    <div className='h-100'>
+      <Row className='m-0 h-100'  style={{gap:"10px 0px"}}>
         <Col lg="4" className='px-lg-2 px-0'>
           <div className="card-bg h-100">
             <AccountingAccuracy />
@@ -19,7 +19,7 @@ function Home() {
           </div>
         </Col>
         <Col lg="12" className='px-lg-2 pe-lg-5'>
-          <div className="card-bg pe-5 mt-4" >
+          <div className="card-bg h-100" >
             <Tables />
           </div>
         </Col>

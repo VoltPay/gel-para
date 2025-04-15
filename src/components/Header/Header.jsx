@@ -6,7 +6,7 @@ import { FaRegMoon } from 'react-icons/fa';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { RiMenu3Line } from 'react-icons/ri';
-
+import { motion, AnimatePresence } from 'framer-motion'
 function Header() {
   // offcanvas
   const [show, setShow] = useState(false);
@@ -38,8 +38,20 @@ function Header() {
   }, [isDarkMode]);
   // theme control
 
+  const [open, setOpen] = useState(false);
+  const [open1, setOpen1] = useState(false);
+
+  const menuVariants = {
+    hidden: { opacity: 0, y: -10, pointerEvents: "none" },
+    visible: { opacity: 1, y: 0, pointerEvents: "auto" },
+  };
+  const menuVariants1 = {
+    hidden: { opacity: 0, y: -10, pointerEvents: "none" },
+    visible: { opacity: 1, y: 0, pointerEvents: "auto" },
+  };
+
   return (
-    <div>
+    <div className=''>
       <div className=' header-content px-lg-5 px-1'>
         {/* web header */}
         <div className='d-lg-flex d-none align-items-center justify-content-lg-between justify-content-center px-3 flex-wrap'>
@@ -59,16 +71,27 @@ function Header() {
                 {link.label}
               </Link>
             ))}
-
-            <div className="dropdown-wrapper z-5">
+            <div className="dropdown-wrapper position-relative z-5" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
               <span className="header-link dropdown-toggle">Banka İşlemleri</span>
-              <div className="dropdown-menu">
-                <Link to="/send-money">Para Gönder</Link>
-                <Link to="/give-money">Para İste</Link>
-                <Link to="/withdraw-money">Para Çek</Link>
-                <Link to="/deposit-money">Para Yatır</Link>
-                <Link to="/iban-money">IBAN'a Gönder</Link>
-              </div>
+
+              <AnimatePresence>
+                {open && (
+                  <motion.div
+                    className="dropdown-menu-custom"
+                    initial="hidden"
+                    animate="visible"
+                    exit="hidden"
+                    variants={menuVariants}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <Link to="/send-money">Para Gönder</Link>
+                    <Link to="/give-money">Para İste</Link>
+                    <Link to="/withdraw-money">Para Çek</Link>
+                    <Link to="/deposit-money">Para Yatır</Link>
+                    <Link to="/iban-money">IBAN'a Gönder</Link>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           </div>
           {/* links */}
@@ -83,13 +106,27 @@ function Header() {
                 <FaRegMoon size={19} />
               </button>
             </div>
-            <div className="dropdown-wrapper z-5">
-              <span className="header-link dropdown-toggle icon-bg"><img src="" alt="" /></span>
-              <div className="dropdown-menu">
-                <Link to="/banka/havale">Havale</Link>
-                <Link to="/banka/eft">EFT</Link>
-                <Link to="/banka/kur">Döviz Kurları</Link>
-              </div>
+            <div className="dropdown-wrapper position-relative z-5" onMouseEnter={() => setOpen1(true)} onMouseLeave={() => setOpen1(false)}>
+              <span className="header-link dropdown-toggle icon-bg"></span>
+              <AnimatePresence>
+                {open1 && (
+                  <motion.div
+                    className="dropdown-menu-custom"
+                    initial="hidden"
+                    animate="visible"
+                    exit="hidden"
+                    variants={menuVariants1}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <Link to="/send-money">Profilim</Link>
+                    <Link to="/send-money">Güvenlik</Link>
+                    <Link to="/send-money">Ödeme Yönetmleri</Link>
+                    <Link to="/send-money">Bildirimler</Link>
+                    <Link to="/send-money">Yardım mı lazım?</Link>
+                    <Link to="/send-money">Çıkış Yap</Link>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           </div>
           {/* icons */}

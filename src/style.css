@@ -45,6 +45,8 @@ body.dark-theme {
 .card-bg {
     background-color: var(--card-bg);
     border-radius: 20px;
+    position: static !important;
+    z-index: auto !important;
 }
 
 .linear-line {
@@ -108,9 +110,11 @@ body.dark-theme {
     background-color: var(--bg-color);
     color: var(--white);
 }
-.text-primary-color{
+
+.text-primary-color {
     color: var(--primary) !important;
 }
-.text-primary-color:hover{
+
+.text-primary-color:hover {
     color: var(--primary-hover) !important;
 }

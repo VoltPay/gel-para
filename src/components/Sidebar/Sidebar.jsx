@@ -24,8 +24,8 @@ const Sidebar = () => {
     }
   };
   return (
-    <div>
-      <div className="card-bg py-3">
+    <div className='h-100'>
+      <div className="card-bg py-3 h-100 d-flex flex-column justify-content-between">
         {/* user name copy */}
         <div className="d-flex align-items-center justify-content-between gap-3">
           <div>
@@ -55,14 +55,14 @@ const Sidebar = () => {
         {/* user name copy */}
         <div className="linear-line "></div>
         {/* kullanılabilir bakiye */}
-        <div className='d-flex flex-column gap-3 align-items-center py-4 '>
+        <div className='d-flex flex-column gap-3 align-items-center py-3'>
           <p className='m-0 bakie-title'>Kullanılabilir Bakiye</p>
           <p className='m-0 bakie-price'>987.450₺</p>
         </div>
         {/* kullanılabilir bakiye */}
         <div className="linear-line "></div>
         {/* para çek para yatır */}
-        <div className='d-flex aligin-items-center justify-content-around  py-4 gap-3'>
+        <div className='d-flex aligin-items-center justify-content-around  py-3 gap-3'>
           <Link to={""} className='text-decoration-none text-white'>
             <div className='d-flex align-items-center gap-2'>
               <FaRegPaperPlane />
@@ -78,13 +78,14 @@ const Sidebar = () => {
         </div>
         {/* para çek para yatır */}
         {/* son islemler */}
-        <div className='d-flex align-items-center justify-content-around gap-5 mt-3'>
-          <p className='m-0'>Son İşlemler</p>
-          <Link to={""} className='text-white all-islem'>Tümünü Gör</Link>
-        </div>
-        <div className="linear-line my-3 "></div>
-        <div className='mt-2'>
-          <div className='d-flex align-items-center justify-content-around gap-5 py-2'>
+
+        <div>
+          <div className='d-flex align-items-center justify-content-around gap-5 mb-4'>
+            <p className='m-0'>Son İşlemler</p>
+            <Link to={""} className='text-white all-islem'>Tümünü Gör</Link>
+          </div>
+          <div className="linear-line"></div>
+          <div className='d-flex align-items-center justify-content-around gap-5 py-3 mt-4'>
             <div className='d-flex align-items-center gap-3'>
               <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
                 <circle cx="11.5" cy="11.5" r="11.5" fill="url(#paint0_linear_2_109)" />
@@ -97,7 +98,7 @@ const Sidebar = () => {
               </svg>
               <div className='d-flex flex-column'>
                 <p className='m-0 last-title'>Lorem, ipsum.</p>
-                <p className='m-0 last-username'>Melisa Eldem</p>
+                <small className='m-0 '>Melisa Eldem</small>
               </div>
             </div>
             <div className='d-flex flex-column'>
@@ -105,7 +106,7 @@ const Sidebar = () => {
               <p className='m-0 last-date'>07.04.2025</p>
             </div>
           </div>
-          <div className='d-flex align-items-center justify-content-around gap-5 py-2'>
+          <div className='d-flex align-items-center justify-content-around gap-5 py-3'>
             <div className='d-flex align-items-center gap-3'>
               <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
                 <circle cx="11.5" cy="11.5" r="11.5" fill="url(#paint0_linear_2_109)" />
@@ -118,7 +119,7 @@ const Sidebar = () => {
               </svg>
               <div className='d-flex flex-column'>
                 <p className='m-0 last-title'>Lorem, ipsum.</p>
-                <p className='m-0 last-username'>Melisa Eldem</p>
+                <small className='m-0 '>Melisa Eldem</small>
               </div>
             </div>
             <div className='d-flex flex-column'>
@@ -126,23 +127,22 @@ const Sidebar = () => {
               <p className='m-0 last-date'>07.04.2025</p>
             </div>
           </div>
+          <div className="linear-line mt-4"></div>
         </div>
         {/* son islemler */}
 
         {/*yardım */}
-        <div className="linear-line mt-3"></div>
-        <div className='d-flex flex-column align-items-center gap-2 my-3'>
+        <div className='d-flex flex-column align-items-center gap-2 py-3'>
           <p className='m-0 text-center help-title'>Herhangi bir sorunla mı <br /> karşılaştınız?</p>
           <p className='m-0 help-text'>İşlemleri yaparken sorun mu yaşıyorsunuz.</p>
         </div>
-        <div className="linear-line mt-4"></div>
-        <div className='px-4 my-3 d-flex align-items-center justify-content-center'>
+        <div className="linear-line"></div>
+        <div className='px-4 mb-3 d-flex align-items-center justify-content-center py-3'>
           <Button className="w-100 linear-btn">
             <Link to={""} className='text-black fw-600 text-decoration-none text-nowrap'>İletişime Geç</Link>
           </Button>
         </div>
         {/*yardım */}
-
       </div>
     </div>
   )

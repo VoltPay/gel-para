@@ -1,4 +1,3 @@
-
 ul.form-stepper {
     counter-reset: section;
     margin-bottom: 3rem;
@@ -149,7 +148,18 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-.form-floating>textarea:focus~label::after, .form-floating>textarea:not(:placeholder-shown)~label::after{
+.form-floating>textarea:focus~label::after,
+.form-floating>textarea:not(:placeholder-shown)~label::after {
     background-color: transparent !important;
     color: var(--white) !important;
+}
+
+.form-step {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.step-title {
+    font-size: 26px;
 }

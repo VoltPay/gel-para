@@ -5,3 +5,12 @@
     color: var(--white) !important;
     border: 1px solid var(--border-color) !important;
 }
+
+.off-canvas-custom {
+    background-color: var(--card-bg) !important;
+    color: var(--white) !important;
+}
+
+.off-canvas-custom input::placeholder {
+    color: var(--white);
+}
