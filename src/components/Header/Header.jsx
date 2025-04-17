@@ -51,7 +51,7 @@ function Header() {
   };
 
   return (
-    <div className=''>
+    <div className='' > 
       <div className=' header-content px-lg-5 px-1'>
         {/* web header */}
         <div className='d-lg-flex d-none align-items-center justify-content-lg-between justify-content-center px-3 flex-wrap'>
@@ -71,7 +71,7 @@ function Header() {
                 {link.label}
               </Link>
             ))}
-            <div className="dropdown-wrapper position-relative z-5" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+            <div className="dropdown-wrapper position-relative" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
               <span className="header-link dropdown-toggle">Banka İşlemleri</span>
 
               <AnimatePresence>
@@ -84,7 +84,6 @@ function Header() {
                     variants={menuVariants}
                     transition={{ duration: 0.2 }}
                   >
-                    <Link to="/send-money">Para Gönder</Link>
                     <Link to="/give-money">Para İste</Link>
                     <Link to="/withdraw-money">Para Çek</Link>
                     <Link to="/deposit-money">Para Yatır</Link>
@@ -97,7 +96,7 @@ function Header() {
           {/* links */}
           {/* icons */}
           <div className='d-flex align-items-center gap-3'>
-            <Link to={""}>
+            <Link to={"/help"}>
               <div className='icon-bg'><IoIosHelpCircleOutline size={29} />
               </div>
             </Link>
@@ -118,12 +117,12 @@ function Header() {
                     variants={menuVariants1}
                     transition={{ duration: 0.2 }}
                   >
-                    <Link to="/send-money">Profilim</Link>
-                    <Link to="/send-money">Güvenlik</Link>
-                    <Link to="/send-money">Ödeme Yönetmleri</Link>
-                    <Link to="/send-money">Bildirimler</Link>
-                    <Link to="/send-money">Yardım mı lazım?</Link>
-                    <Link to="/send-money">Çıkış Yap</Link>
+                    <Link to="/profile" className="text-nowrap">Profilim</Link>
+                    <Link to="/security" className="text-nowrap">Güvenlik</Link>
+                    <Link to="/payment-method" className="text-nowrap">Ödeme Yönetmleri</Link>
+                    <Link to="/notifications" className="text-nowrap">Bildirimler</Link>
+                    <Link to="/help" className="text-nowrap">Yardım mı lazım?</Link>
+                    <Link to="/exit" className="text-nowrap">Çıkış Yap</Link>
                   </motion.div>
                 )}
               </AnimatePresence>

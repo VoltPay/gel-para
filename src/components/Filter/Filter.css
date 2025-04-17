@@ -6,6 +6,15 @@
     border: 1px solid var(--border-color) !important;
 }
 
+.date-filter-custom:focus {
+    box-shadow: none !important;
+    border-color: var(--primary) !important;
+}
+
+.date-filter-custom::placeholder {
+    color: var(--white) !important;
+}
+
 .off-canvas-custom {
     background-color: var(--card-bg) !important;
     color: var(--white) !important;

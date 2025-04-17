@@ -8,7 +8,7 @@ import { Col, Row } from 'react-bootstrap'
 function MainLayout() {
     return (
         <div className='h-100'>
-            <div className='px-lg-5 px-2'>
+            <div className='px-lg-5 px-2 position-relative z-3'>
                 <Header />
             </div>
             <Row className='m-0 h-100'>

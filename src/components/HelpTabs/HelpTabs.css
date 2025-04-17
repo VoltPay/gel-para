@@ -1,0 +1,129 @@
+.customize-tabs .nav-link {
+    background-color: transparent;
+    display: flex;
+    padding: 19px 50px !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+    border-radius: 14px !important;
+    transition: 0.5s;
+    text-wrap: nowrap;
+    border: none !important;
+    font-weight: 500;
+}
+
+.customize-tabs .nav-link:hover {
+    background-color: transparent;
+    display: flex;
+    border: none !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+    border-radius: 14px !important;
+    transition: 0.5s;
+    text-wrap: nowrap;
+    font-weight: 500;
+}
+
+.customize-tabs .nav-link:active,
+.customize-tabs .nav-link:focus {
+    background-color: transparent;
+    display: flex;
+    padding: 19px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--black);
+    border-radius: 14px !important;
+    border: none;
+    transition: 0.5s;
+    text-wrap: nowrap;
+    font-weight: 500;
+}
+
+.customize-tabs .nav-link.active {
+    display: flex;
+    padding: 19px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    color: var(--black) !important;
+    border-radius: 14px !important;
+    background: var(--linear);
+    border: none;
+    font-weight: 500;
+}
+
+.customize-tabs.nav-tabs {
+    border-bottom: none !important;
+}
+
+@media (max-width:972px) {
+    .customize-tabs .nav-link {
+        background-color: transparent;
+        display: flex;
+        padding: 19px 50px !important;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: var(--white);
+        border-radius: 14px !important;
+        border: none;
+        transition: 0.5s;
+        text-wrap: nowrap;
+        font-weight: 500;
+    }
+
+    .customize-tabs .nav-link:hover {
+        background-color: transparent;
+        display: flex;
+        padding: 19px 50px !important;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: var(--white);
+        border-radius: 14px !important;
+        border: none;
+        transition: 0.5s;
+        text-wrap: nowrap;
+        font-weight: 500;
+        border: none !important;
+    }
+
+    .customize-tabs .nav-link:active,
+    .customize-tabs .nav-link:focus {
+        background-color: transparent;
+        display: flex;
+        padding: 19px 50px !important;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: var(--black);
+        border-radius: 14px !important;
+        border: none;
+        transition: 0.5s;
+        text-wrap: nowrap;
+        font-weight: 500;
+    }
+
+    .customize-tabs .nav-link.active {
+        display: flex;
+        padding: 19px 50px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        color: var(--black);
+        border-radius: 14px !important;
+        background: var(--linear);
+        border: none;
+        font-weight: 500;
+    }
+
+    .customize-tabs.nav-tabs {
+        border-bottom: none !important;
+    }
+}

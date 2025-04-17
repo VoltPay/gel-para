@@ -127,6 +127,7 @@ ul.form-stepper li a .form-stepper-circle {
     background-color: transparent !important;
     border: 1px solid var(--border-color) !important;
     border-radius: 12px !important;
+    color: var(--white) !important;
 }
 
 .custom-form-control:focus {

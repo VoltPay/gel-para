@@ -46,7 +46,6 @@ body.dark-theme {
     background-color: var(--card-bg);
     border-radius: 20px;
     position: static !important;
-    z-index: auto !important;
 }
 
 .linear-line {

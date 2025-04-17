@@ -3,6 +3,7 @@ import StepByStep from '../components/StepByStep/StepByStep'
 import { Col, FloatingLabel, Form, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { CiCircleCheck } from 'react-icons/ci'
+import Input from '../components/Input/Input';
 
 function RequestMoney() {
   return (
@@ -21,44 +22,16 @@ function RequestMoney() {
                 </div>
                 <Row className='mt-4 position-relative'>
                   <Col lg="6" className='mb-lg-4 mb-1'>
-                    <Form.Floating className="mb-3">
-                      <Form.Control
-                        id="sender-name"
-                        className='custom-form-control'
-                        type="text"
-                      />
-                      <label htmlFor="sender-name" className='custom-form-label'>Gönderici İsim Soyisim</label>
-                    </Form.Floating>
+                    <Input label="Gönderici İsim Soyisim" />
                   </Col>
                   <Col lg="6" className='mb-lg-4 mb-1'>
-                    <Form.Floating className="mb-3">
-                      <Form.Control
-                        id="sender-email"
-                        className='custom-form-control'
-                        type="email"
-                      />
-                      <label htmlFor="sender-email" className='custom-form-label'>Gönderici E-Posta</label>
-                    </Form.Floating>
+                    <Input label="Gönderici E-Posta" />
                   </Col>
                   <Col lg="6" className='mb-lg-4 mb-1'>
-                    <Form.Floating className="mb-3">
-                      <Form.Control
-                        id="sender-customer-number"
-                        className='custom-form-control'
-                        type="number"
-                      />
-                      <label htmlFor="sender-customer-number" className='custom-form-label'>Müşteri Numarası</label>
-                    </Form.Floating>
+                    <Input label="Müşteri Numarası" />
                   </Col>
                   <Col lg="6" className='mb-lg-4 mb-1'>
-                    <Form.Floating className="mb-3">
-                      <Form.Control
-                        id="amount-requested"
-                        className='custom-form-control'
-                        type="text"
-                      />
-                      <label htmlFor="amount-requested" className='custom-form-label'>Talep Edilecek Miktar</label>
-                    </Form.Floating>
+                    <Input label="Talep Edilecek Miktar" />
                   </Col>
                 </Row>
                 <div className="d-flex justify-content-end mt-auto pt-4">
@@ -98,7 +71,19 @@ function RequestMoney() {
                   <p className='m-0 step-title'>Para Talep Ettiğiniz Kişi</p>
                   <small>melisa.eldem@voltrun.com.tr</small>
                 </div>
-                <div className="d-flex justify-content-end mt-auto pt-4 gap-3">
+                <div className='card bg-color  p-4 mt-4'>
+                  <p className='text-center step-title'>Detayları Onayla</p>
+                  <div className='d-flex align-items-center justify-content-between px-5 mb-3'>
+                    <p className='m-0'>Gönderim Tutarı</p>
+                    <span>1₺</span>
+                  </div>
+                  <div className='d-flex align-items-center justify-content-between px-5 mb-3'>
+                    <p className='m-0'>İşlem Ücreti</p>
+                    <span>1₺</span>
+                  </div>
+                </div>
+
+                <div className="d-flex justify-content-end mt-auto py-4 gap-3">
                   <button className="border-0 btn btn-primary-custom btn-navigate-form-step" type="button" step_number="1">
                     Geri
                   </button>

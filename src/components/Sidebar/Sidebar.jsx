@@ -80,9 +80,9 @@ const Sidebar = () => {
         {/* son islemler */}
 
         <div>
-          <div className='d-flex align-items-center justify-content-around gap-5 mb-4'>
+          <div className='d-flex align-items-center justify-content-around gap-5 mb-4 mt-3'>
             <p className='m-0'>Son İşlemler</p>
-            <Link to={""} className='text-white all-islem'>Tümünü Gör</Link>
+            <Link to={"/last-operations"} className='text-white all-islem'>Tümünü Gör</Link>
           </div>
           <div className="linear-line"></div>
           <div className='d-flex align-items-center justify-content-around gap-5 py-3 mt-4'>

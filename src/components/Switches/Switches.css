@@ -1,0 +1,18 @@
+.customize-checks {
+    display: flex;
+    align-items: center !important;
+    justify-content: start;
+    gap: 20px;
+}
+
+.customize-checks .form-check-input {
+    font-size: 25px;
+    background-color: var(--primary);
+    border: none;
+}
+.customize-checks .form-check-input:checked{
+    background-color: var(--danger);
+}
+.customize-checks .form-check-input:focus{
+    box-shadow: none;
+}
