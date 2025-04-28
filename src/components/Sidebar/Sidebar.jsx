@@ -31,7 +31,7 @@ const Sidebar = () => {
           <div>
             <div className='d-flex align-items-center gap-2 p-3'>
               <img src="https://i.pinimg.com/736x/52/5a/25/525a256bd065ddffe5bcc3a72121e245.jpg" alt="image" className='rounded-circle img-fluid' width={40} height={40} />
-              <p className='sidebar-username-title p-0 m-0'>Melisa Eldem</p>
+              <p className='sidebar-username-title p-0 m-0 text-nowrap'>Melisa Eldem</p>
             </div>
           </div>
           <div>
