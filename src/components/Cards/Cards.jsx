@@ -3,15 +3,15 @@ import './Cards.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Link } from 'react-router-dom';
-
+import bankCard1 from "../../assets/img/bank-card-1.png";
+import bankCard2 from "../../assets/img/bank-card-2.png";
+import bankCard3 from "../../assets/img/bank-card-3.png";
 function Cards() {
     const cardImage = [
-        { id: "1", img: "../src/assets/img/bank-card-1.png" },
-        { id: "2", img: "../src/assets/img/bank-card-2.png" },
-        { id: "3", img: "../src/assets/img/bank-card-3.png" },
-        { id: "4", img: "../src/assets/img/bank-card-1.png" },
-        { id: "5", img: "../src/assets/img/bank-card-2.png" },
-        { id: "6", img: "../src/assets/img/bank-card-3.png" },
+        { id: "1", img: bankCard1 },
+        { id: "2", img: bankCard2 },
+        { id: "3", img: bankCard3 },
+        { id: "4", img: bankCard1 },
     ];
 
     return (

@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { RiMenu3Line } from 'react-icons/ri';
 import { motion, AnimatePresence } from 'framer-motion'
+import logo from "../../assets/img/logo.png"
 function Header() {
   // offcanvas
   const [show, setShow] = useState(false);
@@ -51,13 +52,13 @@ function Header() {
   };
 
   return (
-    <div className='' > 
+    <div className='' >
       <div className=' header-content px-lg-5 px-1'>
         {/* web header */}
         <div className='d-lg-flex d-none align-items-center justify-content-lg-between justify-content-center px-3 flex-wrap'>
           {/* logo */}
           <Link to={"/home"}>
-            <img src="../src/assets/img/logo.png" alt="" />
+            <img src={logo} alt="" />
           </Link>
           {/* logo */}
           {/* links */}

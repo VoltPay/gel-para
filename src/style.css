@@ -75,6 +75,44 @@ body.dark-theme {
     border: none;
 }
 
+.primary-btn {
+    display: flex;
+    padding: 19px 90px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    color: var(--black);
+    border-radius: 14px;
+    background: var(--primary);
+    border: none;
+}
+
+.primary-btn:hover {
+    transition: 0.5s !important;
+    background: var(--primary-hover);
+    border: none;
+}
+
+.closer-btn {
+    display: flex;
+    padding: 19px 90px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    color: var(--white);
+    border-radius: 14px;
+    background: var(--icon-bg);
+    border: 1px solid var(--danger);
+}
+
+.closer-btn:hover {
+    transition: 0.5s !important;
+    background: var(--black);
+    border: 1px solid var(--danger);
+}
+
 .text-black {
     color: var(--black) !important;
 }

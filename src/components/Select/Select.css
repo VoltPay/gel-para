@@ -1,0 +1,53 @@
+.security-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.security-desc {
+    font-size: 16px;
+}
+
+.customize-select {
+    background-color: transparent !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 12px !important;
+    color: var(--white) !important;
+    padding: 1rem .75rem !important;
+
+}
+
+.customize-select:focus {
+    box-shadow: none !important;
+    color: var(--black) !important;
+    border-color: var(--primary) !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    padding: 15px 70px;
+    color: var(--black) !important;
+    font-weight: 500;
+    background-color: var(--primary) !important;
+}
+
+.nav-pills .nav-link,
+.nav-pills .show>.nav-link {
+    padding: 15px 70px;
+    color: var(--white) !important;
+    font-weight: 500;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: var(--bg-color) !important;
+    color: var(--white) !important;
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
+}
