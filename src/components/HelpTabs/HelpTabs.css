@@ -1,7 +1,7 @@
 .customize-tabs .nav-link {
     background-color: transparent;
     display: flex;
-    padding: 19px 50px !important;
+    /* padding: 19px 50px !important; */
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -65,7 +65,7 @@
     .customize-tabs .nav-link {
         background-color: transparent;
         display: flex;
-        padding: 19px 50px !important;
+        /* padding: 19px 50px !important; */
         justify-content: center;
         align-items: center;
         gap: 10px;
