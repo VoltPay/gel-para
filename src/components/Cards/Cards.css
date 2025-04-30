@@ -7,3 +7,36 @@
     z-index: 1 !important;
 
 }
+
+.credit-card-customize {
+    cursor: pointer;
+    border-radius:12px;
+    /* border: 1px solid var(--primary); */
+    background: linear-gradient(116deg, rgba(255, 255, 255, 0.35) 3.3%, rgba(217, 217, 217, 0.13) 57.65%);
+    /* background: linear-gradient(112deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 101.12%); */
+    backdrop-filter: blur(14px);
+    width: 340px;
+    height: 190px;
+}
+@media (max-width:550px){
+    .credit-card-customize {
+        cursor: pointer;
+        border-radius: 12px;
+        /* border: 1px solid var(--primary); */
+        background: linear-gradient(116deg, rgba(255, 255, 255, 0.35) 3.3%, rgba(217, 217, 217, 0.13) 57.65%);
+        /* background: linear-gradient(112deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 101.12%); */
+        backdrop-filter: blur(14px);
+        width: 320px;
+        height: 220px;
+    }
+}.credit-title {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.credit-iban {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 150.2%;
+}

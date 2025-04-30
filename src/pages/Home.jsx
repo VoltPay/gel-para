@@ -18,7 +18,7 @@ function Home() {
             <Cards />
           </div>
         </Col>
-        <Col lg="12" className='px-lg-2 pe-lg-5'>
+        <Col lg="12" className='px-lg-2 pe-lg-5 p-0'>
           <div className="card-bg h-100" >
             <Tables />
           </div>

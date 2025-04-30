@@ -211,12 +211,12 @@ function Tables() {
 
   return (
     <div className='p-lg-4 p-4'>
-      <div className='d-flex align-items-center justify-content-between'>
+      <div className='d-flex align-items-center justify-content-between py-2'>
         <p className='m-0 table-title'>Son İşlemler</p>
-        {/* <Link to={"/last-operations"} className='table-all-btn'>Tümünü Gör</Link> */}
+        <Link to={"/last-operations"} className='table-all-btn'>Tümünü Gör</Link>
       </div>
-      <div className="linear-line mt-3"></div>
-      <div className='table-height'>
+      <div className="linear-line t-3"></div>
+      <div className='table-height py-2'>
         <Table className='mt-3 custom-table'>
           <thead>
             <tr>
